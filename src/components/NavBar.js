@@ -5,7 +5,7 @@ import logo from '../assets/img/logo.svg';
 import linkedinIcon from '../assets/img/linkedinIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
 import resumeIcon from '../assets/img/resumeIcon.svg';
-import Connect from './Connect'; // Import the ConnectModal component
+import Connect from './Connect'; 
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -67,7 +67,7 @@ export const NavBar = () => {
                                     <img src={githubIcon} alt="GitHub" />
                                 </a>
                                 <a 
-                                    href="https://example.com/resume.pdf" // Replace with the actual URL to your resume
+                                    href="https://example.com/resume.pdf" // note to self: Replace with the resume URL
                                     title="Resume"
                                     target="_blank" 
                                     rel="noopener noreferrer"

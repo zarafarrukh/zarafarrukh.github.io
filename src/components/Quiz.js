@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../App.css'; // Import the updated CSS file
+import '../App.css';
 
 // Function to get a random subset of questions
 const getRandomQuestions = (questions, num) => {
@@ -135,7 +135,7 @@ const allQuestions = [
     ],
   },
   
-  // Simple Cloud Computing Questions
+  //Cloud Questions
   {
     questionText: "What does SaaS stand for in cloud computing?",
     answerOptions: [
@@ -178,8 +178,6 @@ const allQuestions = [
   },
 ];
 
-
-  // Quiz Component
 export const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);

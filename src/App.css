@@ -1,4 +1,4 @@
-/************ Custom Font ************/
+/* Custom Font */
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/************ Default Css ************/
+/* Default */
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar************/
+/* Navbar */
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -229,40 +229,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-/*Scroll to Top*/
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(40, 40, 40, 0.8);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
-}
-
-.scroll-to-top.show {
-  opacity: 1;
-}
-
-.scroll-to-top img {
-  width: 24px;
-  height: 24px;
-  color: white;
-}
-
-.scroll-to-top:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  transform: scale(1.1);
-}
 
 /* Connect Modal */
 .custom-modal .modal-dialog {
@@ -281,11 +247,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px !important;
   background: #000000 !important;
   color: #ffffff !important;
-  border: 1px solid #fff !important; /* Base border color */
-  border-right: 6px solid #ffffff !important; /* Thicker border on the right */
-  border-bottom: 6px solid #ffffff !important; /* Thicker border on the bottom */
-  box-shadow: 4px 4px 0 #ffffff, /* Shadow effect on bottom and right */
-              0 0 0 #AA367C; /* No shadow on top and left */
+  border: 1px solid #fff !important; 
+  border-right: 6px solid #ffffff !important; 
+  border-bottom: 6px solid #ffffff !important;
+  box-shadow: 4px 4px 0 #ffffff, 
+              0 0 0 #AA367C; 
   transform: rotateX(5deg) rotateY(-5deg); /* Adds a 3D rotation effect */
 }
 
@@ -330,26 +296,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid #fff;
   border-right: 3px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
-  box-shadow: 2px 2px 0 #ffffff, /* Shadow effect on bottom and right */
-              0 0 0 #AA367C; /* No shadow on top and left */
+  box-shadow: 2px 2px 0 #ffffff, 
+              0 0 0 #AA367C; 
   transition: border-right-width 0.2s ease-out, 
               border-bottom-width 0.2s ease-out, 
-              box-shadow 0.2s ease-out; /* Apply transition to shadow */
+              box-shadow 0.2s ease-out; 
 }
 /* Connect Modal Title */
 .custom-modal .modal-title {
   position: relative;
   display: inline-block;
-  padding-bottom: 5px; /* Space between text and line */
-  margin-bottom: 10px; /* Space below the line */
+  padding-bottom: 5px; 
+  margin-bottom: 10px;
 }
 
 .custom-modal .modal-title::after {
   content: "";
   display: block;
   width: 100%;
-  height: 2px; /* Line thickness */
-  background: #ffffff; /* Line color */
+  height: 2px; 
+  background: #ffffff;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -358,43 +324,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .modal-title-container {
   display: flex;
   align-items: center;
-  gap: 0px; /* Adjust the space between the button and the GIF */
+  gap: 0px;
 }
 
 .email-button-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the space between the button and the GIF */
+  gap: 10px;
 }
 
 .email-button {
   display: flex;
   align-items: center;
-  background-color: #AA367C !important; /* Primary color */
+  background-color: #AA367C !important;
   border: 1px solid #fff !important;
   color: #fff;
   border: none;
-  border-radius: 10px; /* Match the close button's border-radius */
+  border-radius: 10px; 
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  position: relative; /* For the pseudo-element */
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 /* Hover effect for the email button */
 .email-button:hover {
-   /* Darker shade */
   border: 1px solid #fff;
   border-right: 3px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
-  box-shadow: 2px 2px 0 #ffffff,/* Shadow effect on bottom and right */
-              0 0 0 #007bff; /* No shadow on top and left */
+  box-shadow: 2px 2px 0 #ffffff,
+              0 0 0 #007bff; 
   transition: border-right-width 0.2s ease-out, 
               border-bottom-width 0.2s ease-out, 
-              box-shadow 0.2s ease-out; /* Apply transition to shadow */
+              box-shadow 0.2s ease-out;
 }
 
 /* Email icon styling */
@@ -410,7 +375,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .connect-gif {
-  width: 45px; /* Adjust the size of the GIF */
+  width: 45px; 
   height: auto;
   padding-bottom: 23px;
 }
@@ -418,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Modal animation */
 .perspective-container {
-  transform: translate(-50%, -50%) !important; /* Ensure centering */
+  transform: translate(-50%, -50%) !important; 
   width: 100%;
   height: 100%;
   display: flex;
@@ -458,22 +423,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .connect-linkedin-icon {
-  width: 80px; /* Adjust size */
+  width: 80px;
   height: auto;
-  fill: #ffffff; /* Change color */
+  fill: #ffffff;
   transition: fill 0.3s ease;
   margin-left: 5px;
   padding-bottom:5px;
 }
 
 .connect-linkedin-icon:hover {
-  fill: #007bff; /* Change color on hover */
+  fill: #007bff;
 }
 
 .connect-github-icon {
-  width: 28px; /* Adjust size */
+  width: 28px; 
   height: auto;
-  fill: #ffffff; /* Change color */
+  fill: #ffffff;
   transition: fill 0.3s ease;
   margin-left: 8px;
   margin-right: 8px;
@@ -481,7 +446,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .connect-github-icon:hover {
-  fill: #007bff; /* Change color on hover */
+  fill: #007bff;
 }
 
 
@@ -555,7 +520,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
+/************ Skills ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -596,37 +561,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .custom-arrow {
-  width: 20px; /* Adjust the size of the arrows */
+  width: 20px; 
   height: auto;
-  cursor: pointer; /* Add pointer cursor for hover effect */
-  opacity: 0.7; /* Slightly transparent by default */
-  transition: opacity 0.3s ease, color 0.3s ease; /* Smooth transition for opacity and color */
+  cursor: pointer; 
+  opacity: 0.7;
+  transition: opacity 0.3s ease, color 0.3s ease; 
 }
 
-/* Change the color on hover */
 .custom-arrow:hover {
   opacity: 1; 
 }
 
-/* Positioning for the left arrow */
 .custom-arrow-left {
   position: absolute;
-  top: 50%; /* Adjust this value to move the arrow higher or lower */
-  left: 10px; /* Adjust this value for horizontal positioning */
-  transform: translateY(-50%); /* Center the arrow vertically */
+  top: 50%; 
+  left: 10px; 
+  transform: translateY(-50%);
 }
 
-/* Positioning for the right arrow */
 .custom-arrow-right {
   position: absolute;
-  top: 50%; /* Adjust this value to move the arrow higher or lower */
-  right: 10px; /* Adjust this value for horizontal positioning */
-  transform: translateY(-50%); /* Center the arrow vertically */
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%); 
 }
 
 
 
-/************ Projects Css ************/
+/************ Projects ************/
 .project {
   padding: 80px 0;
   position: relative;
@@ -700,7 +662,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
-/*****PROJECTS*****/
 .proj-imgbx {
   position: relative;
   border-radius: 15px;
@@ -708,7 +669,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
   margin-left: 18px;
   width: 100%;
-  max-width: 320px; /* Adjust as needed */
+  max-width: 320px; 
   transition: transform 0.3s ease-in-out;
 }
 
@@ -724,11 +685,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-imgbx:hover {
-  transform: scale(1.05); /* Slightly enlarge the tile on hover */
+  transform: scale(1.05); 
 }
 
 .proj-imgbx:hover .hover-img {
-  opacity: 1; /* Show the hover image on hover */
+  opacity: 1; 
 }
 
 .proj-imgbx .hover-img {
@@ -756,11 +717,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 90%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.219) 100%); /* Gradient background */
-  color: #fff; /* White text color for contrast */
-  padding: 15px; /* Padding for better readability */
-  border-radius: 15px; /* Rounded corners for the background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for better emphasis */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  color: #fff; 
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -780,8 +741,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.5px;
-  display: block; /* Ensure the description spans its own line */
-  margin-top: 5px; /* Space between title and description */
+  display: block; 
+  margin-top: 5px;
 }
 
 
@@ -882,29 +843,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 571px !important;
   margin: auto !important;
   padding: 20px;
-  background: #1e1e1e; /* Dark background to match your site's theme */
+  background: #1e1e1e;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   top: 50% !important;
 }
 
 .quiz-title {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.2rem; /* Adjust size as needed */
-  font-weight: bold; /* Make the title stand out */
-  color: #ffffff; /* Light color to match the theme */
-  text-align: center; /* Center the title */
-  margin-bottom: 20px; /* Space below the title */
-  border-bottom: 2px solid #AA367C; /* Decorative underline */
-  padding-bottom: 10px; /* Space between text and underline */
-  background: linear-gradient(145deg, #1e1e1e, #2b2b2b); /* Subtle gradient for depth */
-  border-radius: 8px; /* Rounded corners for the background */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; 
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #AA367C;
+  padding-bottom: 10px;
+  background: linear-gradient(145deg, #1e1e1e, #2b2b2b); 
+  border-radius: 8px; 
 }
 
 
 .question-section {
   font-size: 1.2rem;
-  color: #ffffff; /* Light text color for readability */
+  color: #ffffff;
   margin-bottom: 20px;
   font-family: 'Source Code Pro', monospace;
 }
@@ -922,7 +883,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 8px 0;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(145deg, #365faa, #9b2d65); /* Gradient background */
+  background: linear-gradient(145deg, #365faa, #9b2d65); 
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
@@ -930,14 +891,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .answer-section button:hover {
-  background: linear-gradient(145deg, #9b2d65, #AA367C); /* Reversed gradient on hover */
-  transform: scale(1.02); /* Slight scaling effect */
+  background: linear-gradient(145deg, #9b2d65, #AA367C);
+  transform: scale(1.02);
 }
 
 .score-section {
   font-size: 1.6rem;
   text-align: center;
-  color: #ffffff; /* Light text color */
+  color: #ffffff;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -963,7 +924,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(145deg, #4caf50, #388e3c); /* Green gradient */
+  background: linear-gradient(145deg, #4caf50, #388e3c);
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
@@ -971,12 +932,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .replay-button:hover {
-  background: linear-gradient(145deg, #388e3c, #4caf50); /* Reversed gradient on hover */
-  transform: scale(1.05); /* Slight scaling effect */
+  background: linear-gradient(145deg, #388e3c, #4caf50); 
+  transform: scale(1.05); 
 }
 
 
-/************ Footer Css ************/
+/***** Footer  ******/
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
