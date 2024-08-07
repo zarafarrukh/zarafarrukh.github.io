@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../App.css'; // Import the updated CSS file
 
+// Function to get a random subset of questions
+const getRandomQuestions = (questions, num) => {
+  const shuffled = [...questions].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, num);
+};
+
 // Large pool of questions
 const allQuestions = [
   // Data Science Questions
@@ -173,93 +179,76 @@ const allQuestions = [
 ];
 
 
-  export const Quiz = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [showScore, setShowScore] = useState(false);
-    const [score, setScore] = useState(0);
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [time, setTime] = useState(15); // Timer in seconds
-  
-    const timerRef = useRef(time);
-  
-    useEffect(() => {
-      timerRef.current = time;
-    }, [time]);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        if (time > 0 && !showScore) {
-          setTime(time - 1);
-        } else {
-          clearInterval(interval);
-          if (!showScore) {
-            handleNextQuestion();
-          }
-        }
-      }, 1000);
-      return () => clearInterval(interval);
-    }, [time, showScore]);
-  
-    const handleAnswerOptionClick = (isCorrect, index) => {
-      setSelectedAnswer(index);
-      if (isCorrect) {
-        setScore(score + 1);
-      } 
-      setTimeout(() => handleNextQuestion(), 2000); // Move to the next question after a short delay
-    };
-  
-    const handleNextQuestion = () => {
-      const nextQuestion = currentQuestion + 1;
-      if (nextQuestion < allQuestions.length) {
-        setCurrentQuestion(nextQuestion);
-        setTime(15); // Reset timer for the next question
-        setSelectedAnswer(null); // Reset the selected answer
-      } else {
-        setShowScore(true);
-      }
-    };
-  
-    const handleReplay = () => {
-      setCurrentQuestion(0);
-      setScore(0);
-      setShowScore(false);
-      setTime(15); // Reset timer for the replay
-      setSelectedAnswer(null);
-    };
-  
-    return (
-      <div className="quiz-container">
-        <h2 className="quiz-title">Test your knowledge!</h2>
-        {!showScore && (
-          <>
-            <div className="timer">Time remaining: {time} seconds</div>
-            <div className="question-section">
-              {allQuestions[currentQuestion].questionText}
-            </div>
-            <div className="answer-section">
-              {allQuestions[currentQuestion].answerOptions.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswerOptionClick(option.isCorrect, index)}
-                  className={`answer-button ${selectedAnswer === index && option.isCorrect ? 'correct' : ''} ${selectedAnswer === index && !option.isCorrect ? 'incorrect' : ''}`}
-                  disabled={selectedAnswer !== null} // Disable buttons after selecting an answer
-                >
-                  {option.answerText} {selectedAnswer !== null && (
-                    option.isCorrect ? <span>✔️</span> : <span>❌</span>
-                  )}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-        {showScore && (
-          <div className="score-section">
-            You scored {score} out of {allQuestions.length}<br />
-            <button className="replay-button" onClick={handleReplay}>
-              Replay
-            </button>
-          </div>
-        )}
-      </div>
-    );
+  // Quiz Component
+export const Quiz = () => {
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+
+  useEffect(() => {
+    setQuestions(getRandomQuestions(allQuestions, 5));
+  }, []);
+
+  const handleAnswerOptionClick = (isCorrect, index) => {
+    setSelectedAnswer(index);
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    setTimeout(() => handleNextQuestion(), 2000); // Move to the next question after a short delay
   };
+
+  const handleNextQuestion = () => {
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+      setSelectedAnswer(null); // Reset the selected answer
+    } else {
+      setShowScore(true);
+    }
+  };
+
+  const handleReplay = () => {
+    setQuestions(getRandomQuestions(allQuestions, 5)); // Reset questions
+    setCurrentQuestion(0);
+    setScore(0);
+    setShowScore(false);
+    setSelectedAnswer(null);
+  };
+
+  return (
+    <div className="quiz-container">
+      <h2 className="quiz-title">Test your knowledge!</h2>
+      {!showScore && (
+        <>
+          <div className="question-section">
+            {questions[currentQuestion]?.questionText}
+          </div>
+          <div className="answer-section">
+            {questions[currentQuestion]?.answerOptions.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswerOptionClick(option.isCorrect, index)}
+                className={`answer-button ${selectedAnswer === index && option.isCorrect ? 'correct' : ''} ${selectedAnswer === index && !option.isCorrect ? 'incorrect' : ''}`}
+                disabled={selectedAnswer !== null} // Disable buttons after selecting an answer
+              >
+                {option.answerText} {selectedAnswer !== null && (
+                  option.isCorrect ? <span>✔️</span> : <span>❌</span>
+                )}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+      {showScore && (
+        <div className="score-section">
+          You scored {score} out of {questions.length}<br />
+          <button className="replay-button" onClick={handleReplay}>
+            Replay
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
