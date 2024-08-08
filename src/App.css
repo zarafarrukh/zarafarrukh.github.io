@@ -89,7 +89,8 @@ p.success {
 p.danger {
 	color: red;
 }
-/* Navbar */
+
+/**** Navbar*****/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -100,7 +101,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #000000be;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -162,7 +163,7 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
+  padding: 10px 25px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
@@ -192,6 +193,7 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;

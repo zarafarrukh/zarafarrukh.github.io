@@ -41,7 +41,7 @@ const Connect = ({ showModal, handleClose }) => {
               </a> and connect with me on 
               <a href="https://www.linkedin.com/in/zarafarrukh/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <img src={linkedinLogo} alt="LinkedIn" className="connect-linkedin-icon" />
-              </a>. When I unwind, you'll find me cooking, reading, watching silly cat videos, or listening to music!
+              </a>. Outside of coding, you'll find me cooking, reading, watching silly cat videos, or socializing!
             </p>
           </Modal.Body>
           <Modal.Footer>

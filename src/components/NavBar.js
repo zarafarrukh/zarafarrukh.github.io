@@ -1,6 +1,6 @@
 // NavBar.js
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import linkedinIcon from '../assets/img/linkedinIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
