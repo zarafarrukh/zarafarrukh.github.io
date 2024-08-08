@@ -1,8 +1,8 @@
 # ![Logo](src/assets/img/logo.svg)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Welcome to My Portfolio
+## Welcome to My [Portfolio](https://zarafarrukh.github.io).
 
-I am Zara Farrukh, a dedicated enthusiast in web development, AI, and Cloud. This website showcases a range of projects and skills that reflect my deep interest and expertise in these fields. Explore my projects, learn about my skills, and find ways to get in touch with me!
+I am Zara Farrukh, a dedicated enthusiast in web development, AI, and Cloud. The website showcases a range of projects and skills that reflect my deep interest and expertise in these fields. Explore my projects, learn about my skills, and find ways to get in touch with me!
 
 ### Projects
 
