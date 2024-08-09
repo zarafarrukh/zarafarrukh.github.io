@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { Quiz } from "./Quiz";
 import logo from "../assets/img/logo.svg";
 import linkedinIcon from "../assets/img/linkedinIcon.svg";
 import githubIcon from "../assets/img/githubIcon.svg";
@@ -8,7 +7,6 @@ import resumeIcon from "../assets/img/resumeIcon.svg";
 export const Footer = () => {
   return (
     <footer className="footer"><br/>
-      <Quiz/>
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
