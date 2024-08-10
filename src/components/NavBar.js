@@ -6,11 +6,13 @@ import linkedinIcon from '../assets/img/linkedinIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
 import resumeIcon from '../assets/img/resumeIcon.svg';
 import Connect from './Connect'; 
+import Resume from './Resume';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-    const [showModal, setShowModal] = useState(false);
+    const [showConnectModal, setShowConnectModal] = useState(false); //Let's Connect
+    const [showResumeModal, setShowResumeModal] = useState(false); //View Resume
 
     useEffect(() => {
         const onScroll = () => {
@@ -29,8 +31,11 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
-    const handleShow = () => setShowModal(true);
-    const handleClose = () => setShowModal(false);
+    const handleConnectShow = () => setShowConnectModal(true);
+    const handleConnectClose = () => setShowConnectModal(false);
+
+    const handleResumeShow = () => setShowResumeModal(true);
+    const handleResumeClose = () => setShowResumeModal(false);
 
     return (
         <>
@@ -67,15 +72,17 @@ export const NavBar = () => {
                                     <img src={githubIcon} alt="GitHub" />
                                 </a>
                                 <a 
-                                    href="https://example.com/resume.pdf" // note to self: Replace with the resume URL
+                                    href="#" // placeholder URL to maintain button UI
                                     title="Resume"
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleResumeShow(); // Trigger the modal
+                                    }}
                                 >
                                     <img src={resumeIcon} alt="Resume" />
                                 </a>
                             </div>
-                            <button className="vvd" onClick={handleShow}>
+                            <button className="vvd" onClick={handleConnectShow}>
                                 <span>Let's Connect</span>
                             </button>
                         </span>
@@ -84,7 +91,10 @@ export const NavBar = () => {
             </Navbar>
 
             {/* Connect Component */}
-            <Connect showModal={showModal} handleClose={handleClose} />
+            <Connect showConnectModal={showConnectModal} handleConnectClose={handleConnectClose} />
+
+            {/* Resume Component */}
+            <Resume showResumeModal={showResumeModal} handleResumeClose={handleResumeClose} />
         </>
     );
 }

@@ -7,13 +7,13 @@ import emailIcon from '../assets/img/emailIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
 import linkedinLogo from '../assets/img/linkedin-logo.png';
 
-const Connect = ({ showModal, handleClose }) => {
+const Connect = ({ showConnectModal, handleConnectClose }) => {
   return (
     <div className="perspective-container">
       <div className="modal-content">
-        <Modal show={showModal} onHide={handleClose} className="custom-modal">
+        <Modal show={showConnectModal} onHide={handleConnectClose} className="custom-modal">
           <Modal.Header>
-            <Button className="custom-close-btn" onClick={handleClose}>
+            <Button className="custom-close-btn" onClick={handleConnectClose}>
               <img src={closeIcon} alt="Close" />
             </Button>
             <div className="modal-title-container">
@@ -53,8 +53,8 @@ const Connect = ({ showModal, handleClose }) => {
 };
 
 Connect.propTypes = {
-  showModal: PropTypes.bool.isRequired,
-  handleClose: PropTypes.func.isRequired,
+  showConnectModal: PropTypes.bool.isRequired,
+  handleConnectClose: PropTypes.func.isRequired,
 };
 
 export default Connect;

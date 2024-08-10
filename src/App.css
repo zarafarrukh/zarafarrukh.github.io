@@ -126,6 +126,20 @@ span.navbar-text {
     display: inline-block;
     margin-left: 14px;
 }
+
+.social-icon button{
+  width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .social-icon a {
     width: 42px;
     height: 42px;
@@ -253,6 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 9999 !important;
 }
 
+
 .custom-modal .modal-content {
   border-radius: 18px !important;
   background: #000000 !important;
@@ -289,9 +304,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: flex-end !important;
 }
 
-/* Connect Modal Close Button */
+/* Modal Close Button */
 .custom-modal .custom-close-btn {
-  background: #AA367C;
+  background: rgb(54.1 170 152);
   border: none;
   cursor: pointer;
   position: absolute;
@@ -302,7 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .custom-modal .custom-close-btn:hover {
-  background: #AA367C !important;
+  background: rgb(54.1 170 152) !important;
   border: 1px solid #fff;
   border-right: 3px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
@@ -312,7 +327,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
               border-bottom-width 0.2s ease-out, 
               box-shadow 0.2s ease-out; 
 }
-/* Connect Modal Title */
+/* Modal Title */
 .custom-modal .modal-title {
   position: relative;
   display: inline-block;
@@ -331,11 +346,118 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
 }
 
+/**** RESUME MODAL *****/
+
+.resume-modal .modal-dialog{
+  position: fixed !important;
+  top: 50% !important;
+  left: 55% !important;
+  transform: translate(-50%, -50%) !important;
+  max-width: 100% !important;
+  width: 950px !important;
+  height: 515px !important;
+  border-radius: 20px;
+  z-index: 1050 !important;
+}
+
+.resume-modal .modal-content {
+  border-radius: 18px !important;
+  height: 523px !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #fff !important; 
+  border-right: 6px solid #ffffff !important; 
+  border-bottom: 6px solid #ffffff !important;
+  box-shadow: 4px 4px 0 #ffffff, 
+              0 0 0 #AA367C; 
+  transform: rotateX(5deg) rotateY(-5deg); /* Adds a 3D rotation effect */
+}
+
+.resume-modal .modal-header,
+.resume-modal .modal-body,
+.resume-modal .modal-footer {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 18px;
+}
+
+.resume-modal .modal-header {
+  border-bottom: 1px solid #000000 !important;
+  position: relative;
+  padding:0px;
+}
+
+.resume-modal .modal-body {
+  padding: 1px !important;
+  overflow-y: auto;
+}
+
+.resume-modal .modal-footer {
+  border-top: 1px solid #000000 !important;
+  justify-content: flex-end !important;
+}
+
+.resume-modal .custom-close-btn {
+  background: rgb(54.1 170 152);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.resume-modal .custom-close-btn:hover {
+  background: rgb(54.1 170 152) !important;
+  border: 1px solid #fff;
+  border-right: 3px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  box-shadow: 2px 2px 0 #ffffff, 
+              0 0 0 #AA367C; 
+  transition: border-right-width 0.2s ease-out, 
+              border-bottom-width 0.2s ease-out, 
+              box-shadow 0.2s ease-out; 
+}
+
+.resume-modal .modal-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0px; 
+  margin-bottom: 10px;
+}
+
+.resume-modal .modal-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; 
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .modal-title-container {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 5px;
 }
+
+/***** Resume Iframe *****/
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 64vh;
+}
+
+.iframe-container iframe {
+  width: 80%;
+  height: 100%; 
+  border:none;
+}
+
 
 .email-button-container {
   display: flex;
@@ -346,7 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .email-button {
   display: flex;
   align-items: center;
-  background-color: #AA367C !important;
+  background-color: #6d62e3 !important;
   border: 1px solid #fff !important;
   color: #fff;
   border: none;
@@ -358,6 +480,91 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: bold;
   position: relative;
   transition: all 0.3s ease;
+}
+
+/* Hover effect for the email button */
+.email-button:hover {
+  border: 1px solid #fff;
+  border-right: 3px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  box-shadow: 2px 2px 0 #ffffff,
+              0 0 0 #007bff; 
+  transition: border-right-width 0.2s ease-out, 
+              border-bottom-width 0.2s ease-out, 
+              box-shadow 0.2s ease-out;
+}
+
+.full-view {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border: none;
+  padding: 0px 0px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.full-view * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.full-view li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.full-view a {
+  padding: .2em .7em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.full-view a::before,
+.full-view a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.full-view a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid rgb(54.1 170 152);
+  border-right: 3px solid rgb(28, 93, 83);
+  transform: translate(-100%, 50%);
+}
+
+.full-view a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(54.1 170 152);
+  border-left: 3px solid rgb(28, 93, 83);
+  transform: translate(100%, -50%)
+}
+
+.full-view a:hover:before,
+.full-view a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.full-view a:hover {
+  color: rgb(54.1 170 152)
 }
 
 /* Hover effect for the email button */

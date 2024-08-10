@@ -1,6 +1,6 @@
 // Banner.js
 import { useState, useEffect } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -15,7 +15,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Software Development", "AI and Data Science", "Cloud Computing" ];
   const period = 1000;
-  const [showModal, setShowModal] = useState(false);
+  const [showConnectModal, setConnectShowModal] = useState(false);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -25,8 +25,8 @@ export const Banner = () => {
     return () => { clearInterval(ticker) };
   }, [text]);
 
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const handleConnectShow = () => setConnectShowModal(true);
+  const handleConnectClose = () => setConnectShowModal(false);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -65,7 +65,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Zara `}<br />
                 <span className="txt-rotate" data-period="500" data-rotate='[ "Software Development", "AI and Data Science", "Cloud Computing" ]'><span className="wrap">{text}</span></span></h1>
                   <p> Currently pursuing Computer Science with a specialization in Data Science. My interests span artificial intelligence, software development, and cloud computing. I'm always eager to connect and explore innovative opportunities and collaborations so feel free to reach out — I’d love to hear your thoughts and ideas!</p>
-                  <button onClick={handleShow}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={handleConnectShow}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -81,7 +81,7 @@ export const Banner = () => {
       </Container>
 
       {/* Use Connect */}
-      <Connect showModal={showModal} handleClose={handleClose} />
+      <Connect showConnectModal={showConnectModal} handleConnectClose={handleConnectClose} />
     </section>
   );
 }
