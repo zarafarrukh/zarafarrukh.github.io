@@ -31,7 +31,7 @@ contactEmail.verify((error) => {
 
 // Define route here
 router.post("/contact", (req, res) => {
-  const { firstName, lastName, email, message, phone } = req.body;
+  const { firstName, lastName, email, message} = req.body;
   const name = firstName + ' ' + lastName;
   const mail = {
     from: name,
@@ -39,7 +39,6 @@ router.post("/contact", (req, res) => {
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
