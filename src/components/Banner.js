@@ -13,7 +13,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Development", "AI and Data Science", "Cloud Computing" ];
+  const toRotate = [ "Software Development", "AI and Data Science", "Machine Learning" ];
   const period = 1000;
   const [showConnectModal, setConnectShowModal] = useState(false);
 
@@ -63,8 +63,8 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Zara `}<br />
-                <span className="txt-rotate" data-period="500" data-rotate='[ "Software Development", "AI and Data Science", "Cloud Computing" ]'><span className="wrap">{text}</span></span></h1>
-                  <p> Currently pursuing Computer Science with a specialization in Data Science. My interests span artificial intelligence, software development, and cloud computing. I'm always eager to connect and explore innovative opportunities and collaborations so feel free to reach out — I’d love to hear your thoughts and ideas!</p>
+                <span className="txt-rotate" data-period="500" data-rotate='[ "Software Development", "AI and Data Science", "Machine Learning" ]'><span className="wrap">{text}</span></span></h1>
+                  <p> Currently pursuing Computer Science with a specialization in Data Science. My interests span artificial intelligence, software development, and machine learning. I'm always eager to connect and explore innovative opportunities and collaborations so feel free to reach out — I’d love to hear your thoughts and ideas!</p>
                   <button onClick={handleConnectShow}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
