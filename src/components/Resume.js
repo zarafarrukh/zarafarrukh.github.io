@@ -3,9 +3,6 @@ import { Modal, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import '../App.css'; 
 import closeIcon from '../assets/img/closeIcon.svg'; 
-import emailIcon from '../assets/img/emailIcon.svg';
-import githubIcon from '../assets/img/githubIcon.svg';
-import linkedinLogo from '../assets/img/linkedin-logo.png';
 
 const Resume = ({ showResumeModal, handleResumeClose }) => {
   return (
@@ -22,7 +19,7 @@ const Resume = ({ showResumeModal, handleResumeClose }) => {
 
             <ul className="full-view">
               <li>
-              <a href="https://drive.google.com/file/d/1DRYzy0B92wADEaaSIoilyvM4TRcS29cT/view" 
+              <a href="https://drive.google.com/file/d/1LGPatZVeNGYocR9iuXBLLzGr-yCZ5C3k/view" 
               target="_blank"
               frameborder="0" 
               allowfullscreen>
@@ -34,7 +31,7 @@ const Resume = ({ showResumeModal, handleResumeClose }) => {
           <Modal.Body>
 
           <div class="iframe-container">
-             <iframe src="https://drive.google.com/file/d/1DRYzy0B92wADEaaSIoilyvM4TRcS29cT/preview" width="500" height="500"></iframe><br/>
+             <iframe src="https://drive.google.com/file/d/1LGPatZVeNGYocR9iuXBLLzGr-yCZ5C3k/preview" width="500" height="500"></iframe><br/>
           </div>
           </Modal.Body>
           <Modal.Footer>
