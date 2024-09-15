@@ -16,7 +16,7 @@ export const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/zarafarrukh/"><img src={linkedinIcon} alt="LinkedIn" /></a>
               <a href="https://github.com/zarafarrukh/"><img src={githubIcon} alt="GitHub" /></a>
-              <a href="#"><img src={resumeIcon} alt="Resume" /></a>
+              
             </div>
             <p>© 2024 Zara Farrukh. All Rights Reserved</p>
           </Col>
