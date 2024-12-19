@@ -64,10 +64,6 @@ export const Skills = () => {
                                 <h5>C++</h5>
                             </div>                       
                             <div className="item">
-                                <img src={meter3} alt="skill-meter" />
-                                <h5>Data Analytics</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter1} alt="skill-meter" />
                                 <h5>Version Control</h5>
                             </div>
@@ -77,11 +73,11 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="skill-meter" />
-                                <h5>Latex</h5>
+                                <h5>Flutter</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="skill-meter" />
-                                <h5>Figma</h5>
+                                <h5>Dart</h5>
                             </div>
                         </Carousel>
                     </div>

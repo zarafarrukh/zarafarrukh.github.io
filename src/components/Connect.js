@@ -35,13 +35,15 @@ const Connect = ({ showConnectModal, handleConnectClose }) => {
              
             </div><br/>
             <p>
-              Hi there! I'm Zara Farrukh, a Computer Science major, specializing in Data Science and minoring in Math at Ontario Tech, Canada. I am a multiple-time recipient of Dean's Honor List and President's List as
-              well as winner of the <a href="https://hackhive-otucs.devpost.com/HackHive" target="_blank">HackHive Hackathon</a> in collaboration with Microsoft, check out more on <a href="https://github.com/zarafarrukh" target="_blank" rel="noopener noreferrer" className="social-link">
+              I'm Zara Farrukh, a Computer Science major specializing in Data Science and minoring in Math at Ontario Tech, Canada. 
+              I'm a multiple-time recipient of Dean's Honor List and President's List, and
+              recently won the <a href="https://hackhive-otucs.devpost.com/" target="_blank">HackHive Hackathon</a> in collaboration with Microsoft, 
+              explore more on <a href="https://github.com/zarafarrukh" target="_blank" rel="noopener noreferrer" className="social-link">
                 <img src={githubIcon} alt="GitHub" className="connect-github-icon" />
-              </a> and connect with me on 
+              </a> or connect with me on 
               <a href="https://www.linkedin.com/in/zarafarrukh/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <img src={linkedinLogo} alt="LinkedIn" className="connect-linkedin-icon" />
-              </a>. Outside of coding, you'll find me cooking, reading or socializing!
+              </a>.
             </p>
           </Modal.Body>
           <Modal.Footer>

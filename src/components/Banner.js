@@ -1,7 +1,7 @@
 // Banner.js
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import ZaraFarrukh_Picture from "../assets/img/ZaraFarrukh_Picture2.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -55,16 +55,17 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container className="banner-container">
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Zara `}<br />
+                <h1>{`Hi, I'm Zara `}<br />
                 <span className="txt-rotate" data-period="500" data-rotate='[ "Software Development", "AI and Data Science", "Machine Learning" ]'><span className="wrap">{text}</span></span></h1>
-                  <p> Currently pursuing Computer Science with a specialization in Data Science. My interests span artificial intelligence, software development, and machine learning. I'm always eager to connect and explore innovative opportunities and collaborations so feel free to reach out — I’d love to hear your thoughts and ideas!</p>
+                <div className="banner-text"><p>I am currently pursuing a Computer Science degree with specialization in Data Science. My interests span AI, software development, and machine learning. 
+                    I'm always eager to connect and explore innovative opportunities and collaborations.</p></div>
                   <button onClick={handleConnectShow}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
@@ -73,7 +74,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={ZaraFarrukh_Picture} alt="Header Img" className="profile-image"/>
                 </div>}
             </TrackVisibility>
           </Col>
