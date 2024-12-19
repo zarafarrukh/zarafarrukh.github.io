@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e0c7a0e.css",
-    "main.js": "/static/js/main.7aae1dd2.js",
+    "main.css": "/static/css/main.81c47de6.css",
+    "main.js": "/static/js/main.5a1b6e15.js",
     "static/js/453.22176e1e.chunk.js": "/static/js/453.22176e1e.chunk.js",
-    "static/media/banner-bg.png": "/static/media/banner-bg.67918efa32b11c3fd4b6.png",
+    "static/media/ZaraFarrukh_Picture.jpg": "/static/media/ZaraFarrukh_Picture.e2c2e525c70895b8dcd0.jpg",
     "static/media/PantryPalHover.png": "/static/media/PantryPalHover.37093ebbc94abad7b936.png",
     "static/media/color-sharp.png": "/static/media/color-sharp.366b229269b71800a68c.png",
-    "static/media/color-sharp2.png": "/static/media/color-sharp2.cf306995a5533bae46d5.png",
     "static/media/footer-bg.png": "/static/media/footer-bg.f140edcac916114c417a.png",
+    "static/media/contact-img.png": "/static/media/contact-img.dd7a8f9aed4eeadd5427.png",
     "static/media/ChatLoungeHover.png": "/static/media/ChatLoungeHover.c98d178b9ea8f1d9a401.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/header-img.svg": "/static/media/header-img.773f56331302ac674e13071da244310a.svg",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/banner-img2.jpg": "/static/media/banner-img2.74784945e530035df0ce.jpg",
     "static/media/spamuraiHover.png": "/static/media/spamuraiHover.a425172cf17da7a2d47d.png",
     "static/media/spamurai.png": "/static/media/spamurai.3d45d5c2575ea354402f.png",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/MusicandMentalHealthHover.png": "/static/media/MusicandMentalHealthHover.ae99e3c8966def2df057.png",
-    "static/media/contact-img.svg": "/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/MusicandMentalHealth.png": "/static/media/MusicandMentalHealth.c47f5025f6b9a46e458d.png",
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.a95afc06831647f5fca2.png",
     "static/media/ChatLounge.jpg": "/static/media/ChatLounge.0144ccf8eefbd917e138.jpg",
@@ -38,12 +37,12 @@
     "static/media/logo.svg": "/static/media/logo.4980e92d0ed6445c5aa9a94417b11190.svg",
     "static/media/emailIcon.svg": "/static/media/emailIcon.101740cadeeda68e9051c8d635572f7a.svg",
     "static/media/closeIcon.svg": "/static/media/closeIcon.0da17de78837fffd609a18fe3fea2cf0.svg",
-    "main.6e0c7a0e.css.map": "/static/css/main.6e0c7a0e.css.map",
-    "main.7aae1dd2.js.map": "/static/js/main.7aae1dd2.js.map",
+    "main.81c47de6.css.map": "/static/css/main.81c47de6.css.map",
+    "main.5a1b6e15.js.map": "/static/js/main.5a1b6e15.js.map",
     "453.22176e1e.chunk.js.map": "/static/js/453.22176e1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e0c7a0e.css",
-    "static/js/main.7aae1dd2.js"
+    "static/css/main.81c47de6.css",
+    "static/js/main.5a1b6e15.js"
   ]
 }
