@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f440d258.css",
-    "main.js": "/static/js/main.bb6d8ce6.js",
+    "main.js": "/static/js/main.b7b83b1e.js",
     "static/js/453.22176e1e.chunk.js": "/static/js/453.22176e1e.chunk.js",
     "static/media/ZaraFarrukh_Picture2.jpg": "/static/media/ZaraFarrukh_Picture2.caa515023b4b8f0a3729.jpg",
     "static/media/PantryPalHover.png": "/static/media/PantryPalHover.37093ebbc94abad7b936.png",
@@ -42,11 +42,11 @@
     "static/media/emailIcon.svg": "/static/media/emailIcon.101740cadeeda68e9051c8d635572f7a.svg",
     "static/media/closeIcon.svg": "/static/media/closeIcon.0da17de78837fffd609a18fe3fea2cf0.svg",
     "main.f440d258.css.map": "/static/css/main.f440d258.css.map",
-    "main.bb6d8ce6.js.map": "/static/js/main.bb6d8ce6.js.map",
+    "main.b7b83b1e.js.map": "/static/js/main.b7b83b1e.js.map",
     "453.22176e1e.chunk.js.map": "/static/js/453.22176e1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f440d258.css",
-    "static/js/main.bb6d8ce6.js"
+    "static/js/main.b7b83b1e.js"
   ]
 }
