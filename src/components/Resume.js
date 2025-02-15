@@ -19,7 +19,7 @@ const Resume = ({ showResumeModal, handleResumeClose }) => {
 
             <ul className="full-view">
               <li>
-              <a href="https://drive.google.com/file/d/1n3MqTBAHOANVOQwSMSPYAlZRT6HiBuOf/view" 
+              <a href="https://drive.google.com/file/d/1TQCtXHueV-HctlqyLjM5ntgGNgpFM6g1/view" 
               target="_blank"
               frameborder="0" 
               allowfullscreen>
@@ -31,7 +31,7 @@ const Resume = ({ showResumeModal, handleResumeClose }) => {
           <Modal.Body>
 
           <div class="iframe-container">
-             <iframe src="https://drive.google.com/file/d/1n3MqTBAHOANVOQwSMSPYAlZRT6HiBuOf/preview" width="500" height="500"></iframe><br/>
+             <iframe src="https://drive.google.com/file/d/1TQCtXHueV-HctlqyLjM5ntgGNgpFM6g1/preview" width="500" height="500"></iframe><br/>
           </div>
           </Modal.Body>
           <Modal.Footer>
