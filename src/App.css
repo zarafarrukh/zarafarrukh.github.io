@@ -39,7 +39,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: rgb(76, 69, 100) !important;
+  background-color: rgba(63, 63, 63, 0.779) !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -101,14 +101,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #00000059;
+  background-color: #e6e6e6a8;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #000000 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -130,7 +130,7 @@ span.navbar-text {
 .social-icon button{
   width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(9, 225, 128, 0.1);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -143,7 +143,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(0, 0, 0, 0.584);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -175,13 +175,13 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000000;
+  border: 1px solid #000000;
   padding: 10px 25px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
-	background-color: transparent;
+	background-color: #ccffe542;
 	transition: 0.3s ease-in-out;
 }
 .navbar-text button span {
@@ -302,7 +302,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Modal Close Button */
 .custom-modal .custom-close-btn {
-  background: rgb(54.1 170 152);
+  background: rgb(56, 56, 56);
   border: none;
   cursor: pointer;
   position: absolute;
@@ -313,12 +313,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .custom-modal .custom-close-btn:hover {
-  background: rgb(54.1 170 152) !important;
+  background: rgb(0, 0, 0) !important;
   border: 1px solid #fff;
   border-right: 3px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
   box-shadow: 2px 2px 0 #ffffff, 
-              0 0 0 #AA367C; 
+              0 0 0 #000000; 
   transition: border-right-width 0.2s ease-out, 
               border-bottom-width 0.2s ease-out, 
               box-shadow 0.2s ease-out; 
@@ -394,7 +394,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .resume-modal .custom-close-btn {
-  background: rgb(54.1 170 152);
+  background: rgb(49, 49, 49);
   border: none;
   cursor: pointer;
   position: absolute;
@@ -405,7 +405,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .resume-modal .custom-close-btn:hover {
-  background: rgb(54.1 170 152) !important;
+  background: rgb(28, 28, 28) !important;
   border: 1px solid #fff;
   border-right: 3px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
@@ -464,7 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .email-button {
   display: flex;
   align-items: center;
-  background-color: #6d62e3 !important;
+  background-color: #242424 !important;
   border: 1px solid #fff !important;
   color: #fff;
   border: none;
@@ -676,7 +676,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(98, 98, 98, 0.189) -5.91%, rgba(50, 50, 50, 0.258) 111.58%);
+  background: linear-gradient(90.21deg, rgba(61, 60, 60, 0.244) -5.91%, rgba(19, 19, 19, 0.258) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -698,7 +698,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -719,9 +719,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 80%;
 }
 
+.introduction {
+  color: #4d4d4d;
+}
+
 .txt-rotate {
   font-size: 45px;
   display: inline-block;
+  color: #4d4d4d;
 }
 
 .txt-rotate > .wrap {
@@ -770,7 +775,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #e7e7e7;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -825,7 +830,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgba(117, 117, 117, 0.349);
+  background-color: rgba(255, 255, 255, 0);
 }
 .project h2 {
 	font-size: 45px;
@@ -833,7 +838,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #f4f4f4;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -845,7 +850,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(205, 203, 203, 0.1);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -870,7 +875,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg,rgb(54.1 170 152) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    background: linear-gradient(90.21deg,rgb(54.1 170 152) -5.91%, rgba(69, 69, 69, 0.5) 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -1001,9 +1006,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact ************/
 .contact {
-  background: linear-gradient(90.21deg, rgba(105, 117, 155, 0.5) -5.91%, rgb(191, 131, 139) 111.58%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(153, 152, 152) 100%);
   padding: 60px 0 70px 0;
 }
+
 .contact img {
   width: 92%;
 }
@@ -1102,7 +1108,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .accessibility-toggle {
-  background-color: #007bff;
+  background-color: #262626;
   color: #fff;
   border: none;
   border-radius: 50%;
