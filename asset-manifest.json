@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f440d258.css",
-    "main.js": "/static/js/main.b7b83b1e.js",
+    "main.css": "/static/css/main.cdb194a6.css",
+    "main.js": "/static/js/main.d296cdf0.js",
     "static/js/453.22176e1e.chunk.js": "/static/js/453.22176e1e.chunk.js",
+    "static/media/banner-img2.jpg": "/static/media/banner-img2.f84e5d137c73a144964c.jpg",
     "static/media/ZaraFarrukh_Picture2.jpg": "/static/media/ZaraFarrukh_Picture2.caa515023b4b8f0a3729.jpg",
     "static/media/PantryPalHover.png": "/static/media/PantryPalHover.37093ebbc94abad7b936.png",
-    "static/media/color-sharp.png": "/static/media/color-sharp.366b229269b71800a68c.png",
-    "static/media/footer-bg.png": "/static/media/footer-bg.f140edcac916114c417a.png",
     "static/media/contact-img.png": "/static/media/contact-img.dd7a8f9aed4eeadd5427.png",
+    "static/media/color-sharp.png": "/static/media/color-sharp.20d3878ab4176800f005.png",
+    "static/media/footer-bg.png": "/static/media/footer-bg.3445029559d400acdc2c.png",
     "static/media/LifePaletteHover.png": "/static/media/LifePaletteHover.6a2812468e14cdcab729.png",
     "static/media/ChatLoungeHover.png": "/static/media/ChatLoungeHover.c98d178b9ea8f1d9a401.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/banner-img2.jpg": "/static/media/banner-img2.74784945e530035df0ce.jpg",
     "static/media/LifePalette.png": "/static/media/LifePalette.3904557157a58979e5fc.png",
     "static/media/spamuraiHover.png": "/static/media/spamuraiHover.a425172cf17da7a2d47d.png",
     "static/media/EmotionRecognition.png": "/static/media/EmotionRecognition.339c741fd05cbc9f5e29.png",
@@ -41,12 +41,12 @@
     "static/media/logo.svg": "/static/media/logo.4980e92d0ed6445c5aa9a94417b11190.svg",
     "static/media/emailIcon.svg": "/static/media/emailIcon.101740cadeeda68e9051c8d635572f7a.svg",
     "static/media/closeIcon.svg": "/static/media/closeIcon.0da17de78837fffd609a18fe3fea2cf0.svg",
-    "main.f440d258.css.map": "/static/css/main.f440d258.css.map",
-    "main.b7b83b1e.js.map": "/static/js/main.b7b83b1e.js.map",
+    "main.cdb194a6.css.map": "/static/css/main.cdb194a6.css.map",
+    "main.d296cdf0.js.map": "/static/js/main.d296cdf0.js.map",
     "453.22176e1e.chunk.js.map": "/static/js/453.22176e1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f440d258.css",
-    "static/js/main.b7b83b1e.js"
+    "static/css/main.cdb194a6.css",
+    "static/js/main.d296cdf0.js"
   ]
 }
